@@ -2,11 +2,12 @@ import { ArrowRightAltRounded} from "@material-ui/icons"
 import styled from "styled-components"
 
 const Container = styled.div`
-   
+   width:400px;
+   height: 500px;
 `
 const Line = styled.hr`
    background-color: #FF6057;
-   width: 80px;
+   width: 79px;
    height: 5px;
    border: none;
    border-radius: 10px;
@@ -19,7 +20,7 @@ const Header = styled.h1`
    margin: 10px 0;
 `
 const Text = styled.div`
-   font-size: 13px;
+   font-size: 14px;
    font-weight: 400;
    font-family: 'Poppins', sans-serif;
    color: #8F8F8F;
@@ -31,7 +32,7 @@ const Link = styled.a`
   font-family: 'Poppins', sans-serif;
   color: #FF6057;
   margin-right: 50px;
- 
+  cursor: pointer;
 `
 
 
@@ -44,7 +45,7 @@ const Headlines = (props) => {
  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
     </Text>
     <Link>Learn About Our Success</Link>
-    <ArrowRightAltRounded style={{color: "#FF6057" , paddingTop:"18px"}}></ArrowRightAltRounded>
+    <ArrowRightAltRounded style={{display: props.display , color: "#FF6057" , paddingTop:"18px"}}></ArrowRightAltRounded>
    </Container>
   );
 };
