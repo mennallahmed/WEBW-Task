@@ -1,13 +1,11 @@
 import styled from "styled-components"
 import SubscribeCard from "../components/SubscribeCard"
-import { mobile } from "../responsive"
 
 const Container = styled.div`
   padding-top: 10px;
   display: flex;
   background-color:#333333;
   color: white;
-  ${mobile({ flexDirection: "column"})};
 
 `
 const Left = styled.div`
@@ -30,8 +28,6 @@ const Desc = styled.p`
 const Center = styled.div`
   flex: 1.5;
   padding: 20px;
-  ${mobile({ display: "none"})};
-
 `
 const Title = styled.h3`
   padding-top: 15px;
@@ -55,7 +51,6 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 2.5;
   padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8"})};
 
 `
 const ContactItem = styled.div`
