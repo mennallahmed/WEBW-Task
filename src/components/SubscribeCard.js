@@ -1,13 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import { mobile } from "../responsive"
 
 
 const Container = styled.div`
    padding-top: 15px;
    display: flex; 
-   flex-direction: column;
-  
+   flex-direction: column; 
 `
 const Description = styled.div`
   font-size: 16px;
@@ -15,8 +13,6 @@ const Description = styled.div`
   font-weight: 700;
   color:white;
   margin-bottom: 20px;
-  ${mobile({ textAlign: "center"})};
-
 `
 const InputContainer = styled.div`
   width: 90%;
@@ -26,8 +22,6 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border: 1px solid #707070;
-  ${mobile({ width: "80%"})};
-
 `
 const Input = styled.input`
   border: none;
