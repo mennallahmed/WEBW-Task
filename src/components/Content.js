@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {mobile} from "../responsive"
 import img from "../media/report.png"
 import img1 from "../media/hidden-img1.png"
 import img2 from "../media/hidden-img2.png"
@@ -8,14 +7,12 @@ import img2 from "../media/hidden-img2.png"
 const Container = styled.div`
    width: 100%;
    height: 100vh;
-   ${mobile({ height: "50%"})};
 `
 const Wrapper = styled.div`
    padding: 10px 20px;
    display: flex;
    align-items: center;
    justify-content: center;
-   ${mobile({ padding: "10px 0"})};
 `
 const Left = styled.div`
    color: white;
@@ -28,6 +25,7 @@ const TextItems = styled.div`
   
 `
 const Text = styled.div`
+
 font-size: ${props => props.size};
 font-weight: 400;
 font-family: 'Poppins', sans-serif;
@@ -39,16 +37,16 @@ font-family: 'Poppins', sans-serif;
 
 `
 const Button = styled.button`
-   height:6vh;
-   width: 13vw;
+   height: 45px;
+   width: 178px;
    background-color:white;
    color: rgba(255,96,87,100%);
    font-size: 16px;
    font-weight: 600;
    font-family: 'Poppins', sans-serif;
    border:none;
-   border-radius: 0.30em;
-   margin:15px 0;
+   border-radius: 10px;
+   margin: 15px 0;
    cursor: pointer;
 `
 const Right = styled.div`
@@ -56,7 +54,6 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-${mobile({ flex:2, justifyContent: "center"})};
 `
 const ImageContainer = styled.div`
  
@@ -93,11 +90,11 @@ const Content = () =>{
       <Left>
         <TextItems>
           <Text size="24px">Advanced Platform</Text>
-          <Text>
+         
             <Header>Take your team to the next level
-                <Text size= "18px">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </Text>
             </Header>
-          </Text>
+            <Text size= "18px">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </Text>
+
         </TextItems>
         <Button>About us</Button>
       </Left>
