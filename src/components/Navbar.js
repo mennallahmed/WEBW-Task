@@ -3,10 +3,8 @@ import styled from "styled-components";
 import {mobile} from "../responsive"
 
 
-
 const Container = styled.div`
    height: 60px;
-   ${mobile({ height: "50%"})};
    
 `
 const Wrapper = styled.div`
@@ -14,7 +12,6 @@ const Wrapper = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
-   ${mobile({ padding: "10px 0"})};
 
 `
 const Left = styled.div`
@@ -24,24 +21,27 @@ const Left = styled.div`
    justify-content: center;
 `
 const Logo = styled.h1`
+  width: 180px;
+  height: 73px;
   font-size: 52px;
   color: white;
-  ${mobile({ marginLeft: "10px", fontSize: "19px"})};
+  ${mobile({ marginLeft: "20px"})};
 
 `
 const Span = styled.span`
    font-family: 'Poppins', sans-serif;
    font-weight: bold;
+   font-size: 52px;
 `
 const Center = styled.div`
    flex: 2; 
    text-align: center;
 `
 const MenuItem = styled.div`
+   width: 415px;
+   height: 20px;
    font-size: 14px;
    cursor: pointer;
-
-   ${mobile({ fontSize: "12px", marginLeft: "10px"})};
 `
 const Link = styled.a`
    font-family: 'Poppins', sans-serif;
@@ -49,24 +49,25 @@ const Link = styled.a`
    font-size: 14px;
    color: white;
    padding:10px;
+   ${mobile({ fontWeight:"600"})}; 
 `
 const Right = styled.div`
    flex: 2; 
    display: flex;
    align-items: center;
    justify-content: center;
-   ${mobile({ flex:2, justifyContent: "center"})};
+  
 `
 const Button = styled.button`
-   height:6vh;
-   width: 13vw;
+   height: 45px;
+   width: 178px;
    background-image: linear-gradient(to right,rgba(255,96,87,100%),rgba(124,28,128,66%));
    font-size: 16px;
    font-weight: 600;
    font-family: 'Poppins', sans-serif;
    color: white;
    border:none;
-   border-radius: 0.30em;
+   border-radius: 10px;
    cursor: pointer;
 `
 
