@@ -5,6 +5,7 @@ const Container = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+margin-top: 150px;
 `
 const Wrapper = styled.div`
 flex: 50%;
@@ -23,6 +24,8 @@ const Circle = styled.div`
 const Icon = styled.img`
 `
 const Title = styled.h1`
+   width:130px;
+   height: 20px;
    font-size: 14px;
    font-weight: 400;
    font-family: 'Poppins', sans-serif;
@@ -31,13 +34,16 @@ const Title = styled.h1`
 `
 const Line = styled.hr`
    background-color: #FF6057;
-   width: 80px;
-   height: 5px;
+   width: 79px;
+   height: 3px;
    border: none;
    border-radius: 10px;
+   margin: 10px 0;
 `
 const Text = styled.div`
-   font-size: 13px;
+   font-size: 14px;
+   width: 259px;
+   height: 126px;
    font-weight: 400;
    font-family: 'Poppins', sans-serif;
    color: #8F8F8F;
