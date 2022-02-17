@@ -1,5 +1,9 @@
 import styled from "styled-components"
-import SectionItem from "./SectionItem";
+import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
+import SectionFive from "./SectionFive";
 
 
 
@@ -10,7 +14,11 @@ const Sections = () => {
  
   return (
    <Container>
-     <SectionItem></SectionItem>
+     <SectionOne></SectionOne>
+     <SectionTwo></SectionTwo>
+     <SectionThree></SectionThree>
+     <SectionFour></SectionFour>
+     <SectionFive display = "none"></SectionFive>
    </Container>
   );
 };
